@@ -14,60 +14,61 @@ struct ContentView: View {
             ScrollView(.vertical, showsIndicators: false){
                 VStack(spacing: 200) {
                     HStack(spacing: 50) {
-                        NavigationLink(destination: MovieView()) {
-                            Text("Movie1").font(.title)
+                        NavigationLink(destination: MovieList()) {
+                            Text("Movie").font(.title)
                         }//.buttonStyle(PlainButtonStyle())
                             .navigationBarTitle("Movie1")
                         
-                        NavigationLink(destination: MovieView()) {
-                            Text("Movie2").font(.title)
-                        }//.buttonStyle(PlainButtonStyle())
-                            .navigationBarTitle("Move2")
-                        
+                        Button(action: {
+
+                        }) {
+                            Image(systemName: "gamecontroller")
+                            Text("Button1").lineLimit(1)
+                        }.frame(width: 100, height: 20).padding().background(Color.blue).foregroundColor(.white)
+                        .cornerRadius(10)
                     }
                     
-                    HStack(spacing: 50) {
-                        NavigationLink(destination: MovieView()) {
-                            Text("Movie1").font(.title)
-                        }//.buttonStyle(PlainButtonStyle())
-                            .navigationBarTitle("Movie1")
-                        
-                        NavigationLink(destination: MovieView()) {
-                            Text("Movie2").font(.title)
-                        }//.buttonStyle(PlainButtonStyle())
-                            .navigationBarTitle("Move2")
-                        
-                    }
-                    
-                    HStack(spacing: 50) {
-                        NavigationLink(destination: MovieView()) {
-                            Text("Movie1").font(.title)
-                        }//.buttonStyle(PlainButtonStyle())
-                            .navigationBarTitle("Movie1")
-                        
-                        NavigationLink(destination: MovieView()) {
-                            Text("Movie2").font(.title)
-                        }//.buttonStyle(PlainButtonStyle())
-                            .navigationBarTitle("Move2")
-                        
-                    }
-                    
-                    
-                    HStack(spacing: 50) {
-                        NavigationLink(destination: MovieView()) {
-                            Text("Movie1").font(.title)
-                        }//.buttonStyle(PlainButtonStyle())
-                            .navigationBarTitle("Movie1")
-                        
-                        NavigationLink(destination: MovieView()) {
-                            Text("Movie2").font(.title)
-                        }//.buttonStyle(PlainButtonStyle())
-                            .navigationBarTitle("Move2")
-                        
-                    }
+//                    HStack(spacing: 50) {
+//                        NavigationLink(destination: MovieView()) {
+//                            Text("Movie1").font(.title)
+//                        }//.buttonStyle(PlainButtonStyle())
+//                            .navigationBarTitle("Movie1")
+//
+//                        NavigationLink(destination: MovieView()) {
+//                            Text("Movie2").font(.title)
+//                        }//.buttonStyle(PlainButtonStyle())
+//                            .navigationBarTitle("Move2")
+//
+//                    }
+//
+//                    HStack(spacing: 50) {
+//                        NavigationLink(destination: MovieView()) {
+//                            Text("Movie1").font(.title)
+//                        }//.buttonStyle(PlainButtonStyle())
+//                            .navigationBarTitle("Movie1")
+//
+//                        NavigationLink(destination: MovieView()) {
+//                            Text("Movie2").font(.title)
+//                        }//.buttonStyle(PlainButtonStyle())
+//                            .navigationBarTitle("Move2")
+//
+//                    }
+//
+//
+//                    HStack(spacing: 50) {
+//                        NavigationLink(destination: MovieView()) {
+//                            Text("Movie1").font(.title)
+//                        }//.buttonStyle(PlainButtonStyle())
+//                            .navigationBarTitle("Movie1")
+//
+//                        NavigationLink(destination: MovieView()) {
+//                            Text("Movie2").font(.title)
+//                        }//.buttonStyle(PlainButtonStyle())
+//                            .navigationBarTitle("Move2")
+//                    }
                     Spacer()
-                                
-                    }.navigationBarTitle("Main Menu")
+                    
+                }.navigationBarTitle("Main Menu")
             }
         }
     }
